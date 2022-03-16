@@ -68,7 +68,10 @@ const router = async () => {
 
 window.onpopstate = history.onpushstate = function (event) {
   alert(
-    "location: " + document.location + ", state: " + JSON.stringify(event.state)
+    "you're moving from location: " +
+      window.location +
+      ", state: " +
+      JSON.stringify(event.state)
   );
 };
 
